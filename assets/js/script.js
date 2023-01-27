@@ -20,10 +20,10 @@ citySearchBtn.addEventListener("click", function(event) {
         return response.json();
     })
 
-    //instructions on what to do with pulled weather data.
+    //instructions on what to do after city has been inputted and data has been retrieved for that city.
     .then(function (data) {
         
-        //console.log(data); // Log pulled data to the console
+        console.log(data); // Log pulled data to the console
 
         let date = dayjs().format("MM/DD/YYYY"); // grab date and format.
 
@@ -34,5 +34,11 @@ citySearchBtn.addEventListener("click", function(event) {
         cityName.textContent = data.name + " " + date; // display the city name and date next to eachother.
 
         cityName.appendChild(weatherIcon); // add the weather icon to the cityName element.
+
+        //display temp, wind, and humidity data 
+        document.getElementById("cityTemp").textContent = `Temperature: ${data.main.temp}`;
+        document.getElementById("cityWind").textContent = `Wind: ${data.wind.speed}`;
+        document.getElementById("cityHumidity").textContent = `Humidity: ${data.main.humidity}`;
+
     });
 });

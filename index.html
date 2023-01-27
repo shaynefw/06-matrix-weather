@@ -53,15 +53,49 @@
       <section class="selectedCity col-12 col-md-8">
         <div id="chosenCity">
           <h2 id="cityName">City (MM/DD/YYYY) <span id="cityWeatherIcon"></span></h2>
-          <p>Temp: </p>
-          <p>Wind: </p>
-          <p>Humidity: </p>
+          <p id="cityTemp"></p>
+          <p id="cityWind"></p>
+          <p id="cityHumidity"></p>
         </div>
         <div>
-            <h2>5-day forcast</h2>
-            <div>
-                <ul>
-                    <li></li>
+            <h4 id="fiveDayForcastTitle"></h4>
+            <div class="fiveDayDiv">
+                <ul class="fiveDayUl">
+                    <li id="dayOneForcast">
+                        <h5 id="dayOneDate"></h5>
+                        <img id="dayOneImg"/>
+                        <p id="dayOneTemp"></p>
+                        <p id="dayOneWind"></p>
+                        <p id="dayOneHumidity"></p>
+                    </li>
+                    <li id="dayTwoForcast">
+                        <h5 id="dayTwoDate"></h5>
+                        <img id="dayTwoImg"/>
+                        <p id="dayTwoTemp"></p>
+                        <p id="dayTwoWind"></p>
+                        <p id="dayTwoHumidity"></p>
+                    </li>
+                    <li id="dayThreeForcast">
+                        <h5 id="dayThreeDate"></h5>
+                        <img id="dayThreeImg"/>
+                        <p id="dayThreeTemp"></p>
+                        <p id="dayThreeWind"></p>
+                        <p id="dayThreeHumidity"></p>
+                    </li>
+                    <li id="dayFourForcast">
+                        <h5 id="dayFourDate"></h5>
+                        <img id="dayFourImg"/>
+                        <p id="dayFourTemp"></p>
+                        <p id="dayFourWind"></p>
+                        <p id="dayFourHumidity"></p>
+                    </li>
+                    <li id="dayFiveForcast">
+                        <h5 id="dayFiveDate"></h5>
+                        <img id="dayFiveImg"/>
+                        <p id="dayFiveTemp"></p>
+                        <p id="dayFiveWind"></p>
+                        <p id="dayFiveHumidity"></p>
+                    </li>
                 </ul>
             </div>
         </div>
