@@ -1,4 +1,4 @@
-let weatherApiKey = "011051029bc329765863330cf5cc3efa"
+let weatherApiKey = config.SECRET_API_KEY;
 
 let citySearch = document.querySelector("#citySearch"); //city name input for the fetched url city variable.
 
