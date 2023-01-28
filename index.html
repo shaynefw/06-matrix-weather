@@ -19,14 +19,25 @@
   </head>
 
   <body class="flex-column min-100-vh">
+
+    <!-- header section  -->
+
     <header class="hero">
       <h1 class="app-title">
         Matrix Weather
       </h1>
     </header>
 
+    <!-- main section  -->
+
     <main class="d-flex justify-space-between">
+
+        <!-- city search and history list  -->
+
       <section class="col-12 col-md-4">
+
+        <!-- search box and button  -->
+
         <div class="card">
           <h3 class="text-uppercase">Search for a City</h3>
           <form id="user-form" class="card-body">
@@ -42,25 +53,31 @@
           </form>
         </div>
 
+        <!-- search history  -->
+
         <div class="card">
           <h3 class="card-header text-uppercase">Previously Searched</h3>
           <div id="searchHistory" class="card-body">
-
           </div>
         </div>
       </section>
 
+      <!-- main city section and 5 day forcast -->
+
       <section class="selectedCity col-12 col-md-8">
         <div id="chosenCity">
-          <h2 id="cityName">City (MM/DD/YYYY) <span id="cityWeatherIcon"></span></h2>
+          <h2 id="cityName"><span id="cityWeatherIcon"></span></h2>
           <p id="cityTemp"></p>
           <p id="cityWind"></p>
           <p id="cityHumidity"></p>
         </div>
-        <div>
+
+        <!-- 5 day forcast div section  -->
+
+        <div class="fiveDayParentDiv">
             <h4 id="fiveDayForcastTitle"></h4>
             <div class="fiveDayDiv">
-                <ul class="fiveDayUl">
+                <ul class="d-flex justify-content-between fiveDayUl">
                     <li id="dayOneForcast">
                         <h5 id="dayOneDate"></h5>
                         <img id="dayOneImg"/>

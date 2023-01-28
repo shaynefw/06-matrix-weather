@@ -4,5 +4,8 @@
     padding: 0em 20em 0em 0em;
 }
 
-.app-title {
+/* 5 day forcast styling  */
+
+.fiveDayUl li {
+    list-style-type: none;
 }
