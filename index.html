@@ -30,7 +30,7 @@
 
     <!-- main section  -->
 
-    <main class="d-flex justify-space-between">
+    <main class="mainSections flex-row justify-space-between">
 
         <!-- city search and history list  -->
 
@@ -39,8 +39,8 @@
         <!-- search box and button  -->
 
         <div class="card">
-          <h3 class="text-uppercase">Search for a City</h3>
-          <form id="user-form" class="card-body">
+          <h3 class="card-header text-uppercase">Search for a City</h3>
+          <form id="searchForm" class="card-body">
             <label class="form-label" for="cities"></label>
             <input
               name="citySearch"
@@ -48,6 +48,7 @@
               type="text"
               autofocus="true"
               class="form-input"
+              placeholder="Enter City Here i.e Toronto"
             />
             <button type="submit" id="citySearchBtn" class="btn">Search</button>
           </form>
@@ -57,16 +58,17 @@
 
         <div class="card">
           <h3 class="card-header text-uppercase">Previously Searched</h3>
-          <div id="searchHistory" class="card-body">
+          <div id="searchHistory" class="card-body text-uppercase">
+            
           </div>
         </div>
       </section>
 
       <!-- main city section and 5 day forcast -->
 
-      <section class="selectedCity col-12 col-md-8">
-        <div id="chosenCity">
-          <h2 id="cityName"><span id="cityWeatherIcon"></span></h2>
+      <section class="selectedCity col-12 col-md-8 text-center">
+        <div id="chosenCity" class="card">
+          <h2 id="cityName" class="card-header"><span id="cityWeatherIcon"></span></h2>
           <p id="cityTemp"></p>
           <p id="cityWind"></p>
           <p id="cityHumidity"></p>
@@ -77,7 +79,7 @@
         <div class="fiveDayParentDiv">
             <h4 id="fiveDayForcastTitle"></h4>
             <div class="fiveDayDiv">
-                <ul class="d-flex justify-content-between fiveDayUl">
+                <ul class="flex-row justify-content-between fiveDayUl">
                     <li id="dayOneForcast">
                         <h5 id="dayOneDate"></h5>
                         <img id="dayOneImg"/>
